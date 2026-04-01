@@ -13,7 +13,7 @@ describe('template spec', () => {
 })
    cy.get('[data-testid="email"]').type("qatestes5412gmail.com")
    cy.get('[data-testid="shippingAddress_zipcode"]').type("81561691")
-   cy.get('[data-testid="btnSubmitZipcode"]').click()
+   cy.get('[data-testid="btnSubmitZipcode"]').clic()
    cy.get('.alert > span').should('have.text','Digite o e-mail em um formato válido')
    cy.get(':nth-child(2) > .form-group > .error > .alert > span').should('have.text','Digite um CEP válido')
 
