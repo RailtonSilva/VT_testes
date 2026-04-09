@@ -65,7 +65,7 @@ describe('template spec', () => {
    cy.get('[data-testid="shipping_number"]').type("700")
    cy.get('[name="billingAddress.id_number"]').type("85919471501")
    cy.get('.form-group-error > :nth-child(2) > .alert > span').should('have.text','Digite um número de CPF ou CNPJ válido')
-   
+   cy.get('#address-form-section > .form-group-error > :nth-child(2) > .alert > span').should('have.text','Digite um número de telefone válido, por exemplo: (11) 96123-4567')
    
   })
 
